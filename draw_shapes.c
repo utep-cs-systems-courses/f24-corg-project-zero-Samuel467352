@@ -26,3 +26,10 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// Prints a triangle using above method and prints a square below it with leftCol offest by 2
+void print_arrow(int leftCol, int size)
+{
+  print_triangle(leftCol, size/2 - 1);
+  print_square(leftCol + 2, size/2+1);
+
+}
